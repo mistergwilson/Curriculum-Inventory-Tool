@@ -62,7 +62,7 @@ Cardapp::Application.configure do
   config.active_support.deprecation = :notify
 
   # In production, :host should be set to the actual host of your application.
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'http://fast-mesa-2477.herokuapp.com/' }
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
