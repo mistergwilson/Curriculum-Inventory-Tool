@@ -1,4 +1,7 @@
 Cardapp::Application.routes.draw do
+  resources :cards
+
+
   devise_for :users
 
   get 'about' => 'pages#about'
