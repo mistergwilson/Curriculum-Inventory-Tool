@@ -1,4 +1,5 @@
  <tr>
+    <td><%= image_tag card.image(:medium) %></td>
     <td><%= card.title %></td>
     <td><%= link_to 'Show', card %></td>
     <% if current_user == card.user %>
