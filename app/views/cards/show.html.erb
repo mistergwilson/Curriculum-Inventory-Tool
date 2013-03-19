@@ -2,15 +2,14 @@
 	<div class="span6 offset3">
 		<div class="well">
 			<%= image_tag @card.image %>
-	<p>
-
-  		<%= @card.title %>
-	</p>
-		<p>
-
-  		<%= @card.user.name %>
-	</p>
-	<% if current_user == @card.user %>
+            <%= card.title %>
+	        <br>
+	        <p>
+		    <strong>
+			Created by <%= card.user.name %>
+		    </strong>
+	        </p>
+			<% if current_user == @card.user %>
 		<%= link_to 'Edit', edit_card_path(@card) %> |
      <% end %>
     <%= link_to 'Back', cards_path %>
