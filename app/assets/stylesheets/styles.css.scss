@@ -28,6 +28,10 @@ body {
 }
 
 /* Required for jQuery Masonry */
+#bgColor {
+	}
+
+
 .box {
 	margin: 5px;
 	padding: 5px;
@@ -41,6 +45,7 @@ body {
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #444;
 	width: 214px;
+	
 }
 
 .box img {
