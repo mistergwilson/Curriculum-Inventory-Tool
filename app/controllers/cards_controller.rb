@@ -4,7 +4,7 @@ class CardsController < ApplicationController
   # GET /cards
   # GET /cards.json
   def index
-    @cards = current_user.cards.order("created_at desc")
+    @cards = Card.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
