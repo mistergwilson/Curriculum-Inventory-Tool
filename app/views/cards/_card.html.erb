@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box" style="background-color:<%= @card.color %>">
 	<%= link_to (image_tag card.image(:medium)), card %>    
 	<%= card.title %>
 	<br>
@@ -11,14 +11,6 @@
     	<%= link_to 'Edit', edit_card_path(card) %>
    		<%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
    	<% end %>
-   	<script type="text/javascript">
-	$(document).ready(function() {
-    $('.box').each(function () {
-    	var hue = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
-    	$(this).css("background-color", hue);
-    });
-});
-</script>
 </div> 
 
 
