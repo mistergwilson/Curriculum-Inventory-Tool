@@ -1,13 +1,10 @@
 <% if user_signed_in? %>
-	<h1> Find inspiration for innovation in the world? Create a card to share with team members. </h1>
+	<h1> Use these activities to assemble your program. </h1>
 <% else %>
 	<div class="hero-unit">
-		<h1>Welcome to The Mad Researcher's Ideation Inspirational Card App!</h1>
+		<h1>Welcome to the Singularity University Curriculum Inventory Tool</h1>
 		<br>
-		<p>
-			Sponsored by <%= link_to "The Mad Researcher", "http://www.themadresearcher.com" %>
-
-		</p>
+		<img src="SU_Logo_Color_screen.png">
 		<br>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
