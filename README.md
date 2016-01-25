@@ -2,5 +2,5 @@
 
 Prototype for Curriculum Tool
 
-by [Gregory Wilson]
+by [Gregory Wilson] - themadresearcher.com
    [Joel Hobbs]
