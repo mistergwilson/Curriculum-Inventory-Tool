@@ -3,7 +3,12 @@
   <%= f.full_error :image_file_size, class: "alert alert-error" %>
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
   <%= f.input :image, label: "Upload an image" %>
-  <%= f.input :title, as: :text, input_html: {rows: "2"} %>
+  <%= f.input :title, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :description, as: :text, input_html: {rows: "2"} %>
+  <%= f.input :time, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :category, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :program, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :materials, as: :text, input_html: {rows: "1"} %>
   <%= f.input :color, label: "Choose background color", input_html: { class: 'span1',  rows: "1", value: "#f5f5f5", id: 'cp1'} %>
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary"  %>
