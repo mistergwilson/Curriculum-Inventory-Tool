@@ -1,12 +1,17 @@
 <div class="box" style="background-color: #f5f5f5">
 	<%= link_to (image_tag card.image(:medium)), card %>    
-	<%= card.title %>
+	<b><%= card.title %></b>
 	<br>
-	<p>
-		<strong>
-			Created by <%= card.user.name %>
-		</strong>
-	</p>
+	<%= card.description %>
+	<br>
+	<b>Time Req:</b><%= card.time %>
+	<br>
+	<b>Category:</b> <%= card.category %>
+	<br>
+	<b>Materials:</b> <%= card.materials %>
+	<br>
+	<b>Program:</b> <%= card.program %>
+	<br>
 	<% if current_user == card.user %>
     	<%= link_to 'Edit', edit_card_path(card) %>
    		<%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>

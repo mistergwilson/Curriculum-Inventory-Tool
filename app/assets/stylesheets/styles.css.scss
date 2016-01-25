@@ -37,21 +37,20 @@ body {
 	margin: 5px;
 	padding: 5px;
 	font-size: 14px;
-	font-weight: bold;
 	line-height: 1.4em;
 	float: left;
-	text-align: center;
+	text-align: left;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	box-shadow: 1px 1px 10px #444;
-	width: 214px;
+	width: 350px;
 	
 }
 
 .box img {
-	display: block;
-	width: 100%;
+	display: inline;
+	width: 100px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
