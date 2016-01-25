@@ -1,6 +1,6 @@
-# One Month Rails
+# Singularity University Curriculum Inventory Tool
 
-This is the sample application for
-[*One Month Rails: Teach Yourself to Code*](http://onemonthrails.com)
+Prototype for Curriculum Tool
 
-by [Gregory Wilson](http://www.themadresearcher.com)
+by [Gregory Wilson] (http://www.themadresearcher.com)
+   and Joel Hobbs
