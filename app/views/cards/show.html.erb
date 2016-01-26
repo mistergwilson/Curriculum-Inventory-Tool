@@ -2,7 +2,12 @@
 	<div class="span6 offset3">
 		
 		<div class="well" style="background-color:<%= @card.color %>">
-			<%= image_tag @card.image %>
+			<% if @card.image_file_name == nil %>
+				<img src="SU_Logo_Thumbnail.png">
+			<% else %>
+				<%= image_tag @card.image %>
+			<% end %>
+			
 	<p>
         <strong>
   		<%= @card.title %>

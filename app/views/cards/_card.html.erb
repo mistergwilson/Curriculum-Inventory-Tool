@@ -1,5 +1,9 @@
 <div class="box" style="background-color: #f5f5f5">
-	<%= link_to (image_tag card.image(:medium)), card %>    
+	<% if card.image_file_name == nil %>
+		<%= link_to (image_tag "SU_Logo_Thumbnail.png"), card %>
+	<% else %>
+		<%= link_to (image_tag card.image(:medium)), card %> 
+	<% end %>   
 	<b><%= card.title %></b>
 	<br>
 	<%= card.description %>
