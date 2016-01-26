@@ -7,6 +7,9 @@ gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 
+source "https://rubygems.org"
+ruby "1.9.3"
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
