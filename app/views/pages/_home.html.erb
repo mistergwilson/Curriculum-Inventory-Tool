@@ -1,5 +1,9 @@
 <% if user_signed_in? %>
 	<h1> Use these activities to assemble your program. </h1>
+	<%= form_tag search_cards_path, :method => :get do |f| %>
+	<%= text_field_tag :query, params[:query] %>
+	<%= submit_tag "Search", :name => nil %>
+	<% end %>
 <% else %>
 	<div class="hero-unit">
 		<h1>Welcome to the Singularity University Curriculum Inventory Tool</h1>
@@ -11,3 +15,6 @@
 		</p>
 	</div>
 <% end %>
+
+
+

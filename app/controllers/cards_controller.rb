@@ -1,6 +1,21 @@
 class CardsController < ApplicationController
   before_filter :authenticate_user!, except: [:index]
 
+
+  #GET /cards/search
+  #GET /cards/search.xml
+  def search
+    @cards = Card.search do
+      fulltext params[:query]
+    end.results
+
+    respond_to do |format|
+      format.html { render :action => "index" }
+      format.json { render json: @cards }
+    end
+  end
+
+
   # GET /cards
   # GET /cards.json
   def index

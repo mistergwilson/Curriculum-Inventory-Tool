@@ -1,6 +1,5 @@
 <div class="row">
 	<div class="span6 offset3">
-		
 		<div class="well" style="background-color:<%= @card.color %>">
 			<% if @card.image_file_name == nil %>
 				<img src="SU_Logo_Thumbnail.png">
@@ -13,11 +12,16 @@
   		<%= @card.title %>
   	    </strong>
 	</p>
-		<p>
-    <strong>
-  		Created by <%= @card.user.name %>
-  	</strong>
-	</p>
+	<%= @card.description %>
+	<br>
+	<b>Time Req:</b><%= @card.time %>
+	<br>
+	<b>Category:</b> <%= @card.category %>
+	<br>
+	<b>Materials:</b> <%= @card.materials %>
+	<br>
+	<b>Program:</b> <%= @card.program %>
+	<br>
 	<% if current_user == @card.user %>
 		<%= link_to 'Edit', edit_card_path(@card) %> |
      <% end %>
@@ -26,5 +30,4 @@
 </div>
 	</div> 
 		</div>
-
 

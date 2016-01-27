@@ -1,5 +1,9 @@
 Cardapp::Application.routes.draw do
-  resources :cards
+  resources :cards do
+    collection do
+      get :search
+    end
+  end
 
 
   devise_for :users
