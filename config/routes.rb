@@ -2,6 +2,7 @@ Cardapp::Application.routes.draw do
   resources :cards do
     member do
       put "like", to: "cards#upvote"
+      put "dislike", to: "cards#downvote"
     end
     collection do
       get :search

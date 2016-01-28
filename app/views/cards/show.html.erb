@@ -23,9 +23,12 @@
 	<b>Program:</b> <%= @card.program %>
 	<br>
 	<br>
-	<span class="icon-star"></span>
-	<%= @card.get_upvotes.size %>
+	<% if current_user.voted_up_on? @card %>
+		<span class="icon-star"></span>
+		<%= link_to 'Remove Favorite', dislike_card_path(@card), method: :put%>
+	<% else %>
 	<%= link_to 'Favorite', like_card_path(@card), method: :put%>
+	<% end %>
 	<% if current_user == @card.user %>
 		<span class="icon-edit"></span>
 		<%= link_to 'Edit', edit_card_path(@card) %> |

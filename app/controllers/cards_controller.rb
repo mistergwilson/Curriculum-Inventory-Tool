@@ -103,4 +103,10 @@ class CardsController < ApplicationController
     @card.upvote_by current_user
     redirect_to :back
   end
+
+  def downvote
+    @card = current_user.cards.find(params[:id])
+    @card.downvote_by current_user
+    redirect_to :back
+  end
 end
