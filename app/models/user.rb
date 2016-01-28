@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :cards
+
+  acts_as_voter
 end

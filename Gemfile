@@ -7,6 +7,7 @@ gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
 gem 'sunspot_rails'
+gem 'acts_as_votable', '~> 0.10.0'
 
 
 ruby "1.9.3"

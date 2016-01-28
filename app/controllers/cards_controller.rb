@@ -97,4 +97,10 @@ class CardsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def upvote
+    @card = current_user.cards.find(params[:id])
+    @card.upvote_by current_user
+    redirect_to :back
+  end
 end

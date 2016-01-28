@@ -22,9 +22,15 @@
 	<br>
 	<b>Program:</b> <%= @card.program %>
 	<br>
+	<br>
+	<span class="icon-star"></span>
+	<%= @card.get_upvotes.size %>
+	<%= link_to 'Favorite', like_card_path(@card), method: :put%>
 	<% if current_user == @card.user %>
+		<span class="icon-edit"></span>
 		<%= link_to 'Edit', edit_card_path(@card) %> |
      <% end %>
+    <span class="icon-arrow-left"></span>
     <%= link_to 'Back', cards_path %>
 
 </div>

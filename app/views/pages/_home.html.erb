@@ -1,5 +1,6 @@
 <% if user_signed_in? %>
 	<h1> Use these activities to assemble your program. </h1>
+	<br>
 	<%= form_tag search_cards_path, :method => :get do |f| %>
 	<%= text_field_tag :query, params[:query] %>
 	<%= submit_tag "Search", :name => nil %>
