@@ -1,5 +1,6 @@
 class Card < ActiveRecord::Base
-  attr_accessible :title, :image, :color, :description, :time, :category, :program, :materials
+  attr_accessible :title, :image, :color, :description, :time, :category, :program, :materials, :subject, :tags, :outcomes, :notes, :sequence, :assessment
+
 
 
   validates :title, presence: true
@@ -12,6 +13,7 @@ class Card < ActiveRecord::Base
   searchable do 
   	text :title
     text :category
+    text :subject
   end
 
   acts_as_votable

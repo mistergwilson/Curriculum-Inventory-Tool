@@ -8,13 +8,11 @@
 	<br>
 	<%= card.description %>
 	<br>
-	<b>Time Req:</b><%= card.time %>
+	<b>Subject Area: </b><%= card.subject %>
 	<br>
-	<b>Category:</b> <%= card.category %>
+	<b>Content Tags: </b> <%= card.tags %>
 	<br>
-	<b>Materials:</b> <%= card.materials %>
-	<br>
-	<b>Program:</b> <%= card.program %>
+	<b>Category: </b> <%= card.category %>
 	<br>
 	<br>
 	<% if current_user == card.user %>

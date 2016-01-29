@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20160128181100) do
+ActiveRecord::Schema.define(:version => 20160128224004) do
 
   create_table "cards", :force => true do |t|
     t.string   "title"
@@ -28,6 +28,12 @@ ActiveRecord::Schema.define(:version => 20160128181100) do
     t.string   "program"
     t.string   "materials"
     t.string   "category"
+    t.string   "subject"
+    t.string   "tags"
+    t.string   "outcomes"
+    t.string   "notes"
+    t.integer  "sequence"
+    t.string   "assessment"
   end
 
   add_index "cards", ["user_id"], :name => "index_cards_on_user_id"

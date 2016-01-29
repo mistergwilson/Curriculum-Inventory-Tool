@@ -5,10 +5,15 @@
   <%= f.input :image, label: "Upload an image" %>
   <%= f.input :title, as: :text, input_html: {rows: "1"} %>
   <%= f.input :description, as: :text, input_html: {rows: "2"} %>
+  <%= f.input :outcomes, as: :text, label: "Learning Outcomes", input_html: {rows: "1"} %>
   <%= f.input :time, as: :text, label: "Time Requirement", input_html: {rows: "1"} %>
-  <%= f.input :category, as: :text, input_html: {rows: "1"} %>
-  <%= f.input :program, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :category, as: :text, label: "Type of Instruction",  input_html: {rows: "1"} %>
+  <%= f.input :subject, collection: ["Learning", "Health", "Environment", "Food", "Water", "Security", "Prosperity", "Space", "Disaster Resilience", "Governance", "Entrepreneurship", "Policy, Law & Ethics", "Artificial Intelligence", "Robotics", "Medicine & Neuroscience", "Energy & Environmental Systems", "Biotechnology & Bioinformatics", "Nanotechnology & Digital Fabrication", "Future Studies & Forecasting", "Networks and Computing", "Finance & Economics", "Exponential Organizations", "Design Thinking"] %>
+  <%= f.input :tags, as: :text, input_html: {rows: "1"} %>
   <%= f.input :materials, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :notes, as: :text, label: "Faciliator's Notes", input_html: {rows: "2"} %>
+  <%= f.input :assessment, as: :text, input_html: {rows: "1"} %>
+  <%= f.input :sequence, as: :text, input_html: {rows: "1"} %>
   <%= f.input :color, label: "Choose background color", input_html: { class: 'span1',  rows: "1", value: "#f5f5f5", id: 'cp1'} %>
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary"  %>
