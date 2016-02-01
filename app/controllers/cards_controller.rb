@@ -27,6 +27,16 @@ class CardsController < ApplicationController
     end
   end
 
+  def favorite
+    @cards = current_user.find_up_voted_items
+
+    respond_to do |format|
+      format.html { render :action => "index" }
+      format.json { render json: @cards }
+    end
+  end
+
+
   # GET /cards/1
   # GET /cards/1.json
   def show

@@ -7,28 +7,53 @@
 				<%= image_tag @card.image %>
 			<% end %>
 			
-	<p>
+	<p style="font-size: 36px">
         <strong>
   		<%= @card.title %>
   	    </strong>
 	</p>
+	<hr>
 	<%= @card.description %>
 	<br>
-	<b>Subject Area: </b><%= @card.subject %>
+	<hr>
+	<b style="font-size: 18px"><u>Subject Area</u></b>
 	<br>
-	<b>Content Tags: </b><%= @card.tags %>
+	<%= @card.subject %>
 	<br>
-	<b>Category: </b> <%= @card.category %>
 	<br>
-	<b>Learning Outcomes: </b> <%= @card.outcomes %>
+	<b style="font-size: 18px"><u>Content Tags</u></b>
 	<br>
-	<b>Time Req: </b><%= @card.time %>
+	<%= @card.tags %>
 	<br>
-	<b>Materials: </b> <%= @card.materials %>
 	<br>
-	<b>Facilitation Notes: </b> <%= @card.notes %>
+	<b style="font-size: 18px"><u>Category</u></b> 
 	<br>
-	<b>Sequence: </b> <%= @card.sequence %>
+	<%= @card.category %>
+	<br>
+	<br>
+	<b style="font-size: 18px"><u>Learning Outcomes</u></b> 
+	<br>
+	<%= @card.outcomes %>
+	<br>
+	<br>
+	<b style="font-size: 18px"><u>Time Requirement</u></b>
+	<br>
+	<%= @card.time %>
+	<br>
+	<br>
+	<b style="font-size: 18px"><u>Materials</u></b> 
+	<br>
+	<%= @card.materials %>
+	<br>
+	<br>
+	<b style="font-size: 18px"><u>Facilitation Notes</u></b> 
+	<br>
+	<%= @card.notes %>
+	<br>
+	<br>
+	<b style="font-size: 18px"><u>Sequence</u></b>
+	<br>
+	<%= @card.sequence %>
 	<br>
 	<br>
 	<% if current_user.voted_up_on? @card %>

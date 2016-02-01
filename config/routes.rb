@@ -6,6 +6,7 @@ Cardapp::Application.routes.draw do
     end
     collection do
       get :search
+      get :favorite
     end
   end
 

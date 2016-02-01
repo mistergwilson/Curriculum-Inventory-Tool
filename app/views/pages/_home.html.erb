@@ -4,7 +4,9 @@
 	<%= form_tag search_cards_path, :method => :get do |f| %>
 	<%= text_field_tag :query, params[:query] %>
 	<%= submit_tag "Search", :name => nil %>
-	<% end %>
+	<br>
+	<%= link_to 'Show Favorites', favorite_cards_path %>
+<% end %>
 <% else %>
 	<div class="hero-unit">
 		<h1>Welcome to the Singularity University Curriculum Inventory Tool</h1>
